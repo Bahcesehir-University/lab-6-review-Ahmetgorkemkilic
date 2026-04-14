@@ -40,7 +40,7 @@ public:
     // TODO 1a: Default constructor
     // Set name to "Unknown", id to 0, gpa to 0.0
     Student() {
-        name = "Unkown";
+        name = "Unknown";
         id = 0;
         gpa = 0.0;
     }
@@ -64,7 +64,7 @@ public:
     // TODO 1d: Destructor
     // Print: "Student [name] destroyed"
     ~Student() {
-        cout << " Student " << name << " destroyed\n";
+        cout << "Student" << name << "destroyed";
     }
 
     // ----- Task 2: Getters (Encapsulation) -----
@@ -140,7 +140,7 @@ public:
     // Format: name = "Unkown";
     // Example: "Student(Ali, ID: 101, GPA: 3.5)"
     friend ostream& operator<<(ostream& os, const Student& s) {
-        os <<  " Student ("<<s.name <<", ID: "<< s.id <<", GPA:"<< s.gpa<<")";
+        os <<  "Student("<<s.name <<", ID: "<< s.id <<", GPA:"<< s.gpa<<")";
         return os;
     }
 };
